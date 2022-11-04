@@ -223,3 +223,6 @@ export const useMode = () => {
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   return [theme, colorMode];
 };
+
+//after writing all of these, we need to go to app.js and add the relevant imports there
+//and wrap our app with all these
