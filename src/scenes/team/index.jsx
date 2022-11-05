@@ -51,7 +51,7 @@ const Team = () => {
             p="5px"
             display="flex"
             justifyContent="center"
-            // ! so this is how you write multiple ternary if else statements
+            // * so this is how you write multiple ternary if else statements
             backgroundColor={
               access === "admin"
                 ? colors.greenAccent[600]
@@ -73,9 +73,38 @@ const Team = () => {
     },
   ];
   return (
-    <Box>
+    <Box m="20px">
       <Header title="TEAM" subtitle="Managing the Team Members" />
-      <Box>
+      <Box
+        m="40px 0 0 0"
+        height="75vh"
+        // with this sx prop, we're styling the data grid to our liking
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none",
+          },
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+          },
+          "& .name-column--cell": {
+            color: colors.greenAccent[300],
+          },
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: colors.blueAccent[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-virtualScroller": {
+            backgroundColor: colors.primary[400],
+          },
+          "& .MuiDataGrid-footerContainer": {
+            borderTop: "none",
+            backgroundColor: colors.blueAccent[700],
+          },
+          "& .MuiCheckbox-root": {
+            color: `${colors.greenAccent[200]} !important`,
+          },
+        }}
+      >
         <DataGrid
           // data generally goes to the rows prop
           rows={mockDataTeam}
