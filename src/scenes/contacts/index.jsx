@@ -85,6 +85,7 @@ const Contacts = () => {
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
           },
+          //*   without this, the filter etc. won't be seen
           "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
             color: `${colors.grey[100]} !important`,
           },
@@ -93,6 +94,7 @@ const Contacts = () => {
         <DataGrid
           rows={mockDataContacts}
           columns={columns}
+          // *   filter functionality
           components={{ Toolbar: GridToolbar }}
         />
       </Box>
