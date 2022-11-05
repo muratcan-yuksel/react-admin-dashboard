@@ -8,6 +8,7 @@
 - install formik => npm install formik yup
 - install fullcalendrar => npm install @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list
 - install nivo charts => @nivo/core @nivo/pie @nivo/bar @nivo/geo
+- install react pro sidebar => npm i react-pro-sidebar
 
 #### NOTE that in order for nivo carths to work, you need to install the core first and then the other charts
 
@@ -35,5 +36,3 @@ root.render(
 ### Adding google fonts
 
 We go to fonts.google.com and choose the `source sans pro` font and add some of them. We choose the `import` section, copy the link, and paste it as such to `index.css` => `@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Source+Sans+Pro:wght@400;600;700&display=swap');`
-
-left at 16:41
