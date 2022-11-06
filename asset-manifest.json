@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-admin-dashboard/static/css/main.99a05f0e.css",
+    "main.js": "/react-admin-dashboard/static/js/main.adaadcad.js",
+    "index.html": "/react-admin-dashboard/index.html",
+    "main.99a05f0e.css.map": "/react-admin-dashboard/static/css/main.99a05f0e.css.map",
+    "main.adaadcad.js.map": "/react-admin-dashboard/static/js/main.adaadcad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99a05f0e.css",
+    "static/js/main.adaadcad.js"
+  ]
+}
